@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  </head>
+  <body>
+  
+  <div class="whole">
+    <div class="linkphoto">
+      <a href="homepage.html"><img src="images/landing_polaroid.jpg" alt="link" id="link">
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#link").click(function(e) {
+        e.preventDefault();
+      $('homepage.html').fadeIn(3000);
+
+      $(".whole").fadeOut(80);
+      });
+    });
+  </script>
+
+  </body>
+</html>
